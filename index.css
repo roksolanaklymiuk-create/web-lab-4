@@ -1,0 +1,22 @@
+body { font-size: 120%; font-family: Arial, sans-serif; margin: 20px; }
+h1, h2, h3 { text-align: center; }
+
+.index-h1 { font-size: 24px; }
+.index-p { font-size: 120%; }
+a:link { color: #0055ff; }
+a:visited { color: #8a2be2; }
+
+.nav-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    list-style: none; padding: 0; text-align: center;
+}
+
+@media (min-width: 768px) {
+    .nav-links { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 992px) {
+    .nav-links { display: flex; justify-content: center; gap: 40px; }
+}
