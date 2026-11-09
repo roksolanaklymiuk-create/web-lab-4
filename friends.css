@@ -1,0 +1,23 @@
+body { font-size: 120%; font-family: Arial, sans-serif; margin: 20px; }
+h1 { text-align: center; font-size: 22px; }
+h2 { text-align: center; font-size: 144%; }
+a.back-link { font-style: italic; display: block; text-align: center; margin-bottom: 20px;}
+
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #333; padding: 10px; }
+th { text-align: center; background-color: green; color: white; font-weight: bold; }
+tr:nth-child(even) td { background-color: gray; color: white; }
+tr:nth-child(odd) td { background-color: white; color: black; }
+td:last-child, th:last-child { text-align: right; }
+
+th { font-size: 110%; }
+
+@media (min-width: 768px) {
+    th { font-size: 120%; }
+    td { font-size: 110%; }
+}
+
+@media (min-width: 992px) {
+    th { font-size: 130%; }
+    td { font-size: 120%; }
+}
