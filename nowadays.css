@@ -1,0 +1,20 @@
+body { font-size: 120%; font-family: Arial, sans-serif; margin: 20px; }
+h1 { text-align: center; font-size: 22px; }
+h2 { text-align: center; font-size: 144%; }
+a.back-link { font-style: italic; display: block; text-align: center; margin-bottom: 20px;}
+
+l.shopping-list > li:nth-child(odd) { background-color: gray; color: white; }
+ul.shopping-list > li:nth-child(even) { background-color: white; color: black; }
+ol.recipe-list > li:nth-child(3):hover, 
+ol.recipe-list > li:nth-child(5):hover { cursor: pointer; }
+ol.recipe-list > li:nth-child(4) { background-color: #ffd700; }
+
+.lists-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 992px) {
+    .lists-grid { grid-template-columns: 1fr 1fr; }
+}
